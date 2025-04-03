@@ -1,0 +1,13 @@
+.error-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-container h1 {
+    color: #ff4444;
+}
+
+.error-container a {
+    color: #ffcc00;
+    font-weight: bold;
+}

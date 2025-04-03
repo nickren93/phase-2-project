@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensure the App takes the full height */
 }
 
 .App-logo {
@@ -22,6 +24,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-grow: 0; /* Ensures header only takes the space it needs */
 }
 
 .App-link {
@@ -35,4 +38,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  flex-grow: 1; /* This will push the footer to the bottom */
 }

@@ -1,0 +1,62 @@
+#current-champions-list {
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;  /* Make the container wider */
+    max-width: 800px;  /* Prevent it from being too wide */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ensure the table takes up a good portion of the screen */
+table {
+    width: 100%;  /* Make the table take the full width of its container */
+    max-width: 750px;  /* Prevent it from being too stretched */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #222;  /* Dark theme background */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Improve the spacing inside table cells */
+th, td {
+    padding: 12px 15px;  /* Increased padding for better readability */
+    border: 1px solid #ffcc00;
+    font-size: 18px;  /* Slightly larger text */
+}
+
+/* Style the header row */
+th {
+    background-color: #444;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+/* Improve row styling for readability */
+td {
+    text-align: center;
+    background-color: #333;
+    color: #ffcc00;
+}
+
+/* Add alternating row colors for better readability */
+tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #current-champions-list {
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
